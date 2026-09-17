@@ -104,6 +104,7 @@ README.md
 DESIGN.md
 VALIDATION.md
 CHANGELOG.md
+LICENSE
 references/
   cognitive-task-model.md
   ux-interaction-review.md
@@ -130,3 +131,7 @@ references/
 当前版本按 v0.2.0 冻结，已跨搜索、表单、仪表盘、表格、画布、AI 工作台以及 GitHub 删除和权限流程验证。测试范围、实际发现与未覆盖边界见 [VALIDATION.md](VALIDATION.md)，版本记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 它证明了该方法已经能够稳定改善 Codex 的观察、操作、核验和停止决策，但不声称替代真实用户研究、业务规则或所有辅助技术测试。
+
+## 许可证
+
+本项目采用 [MIT License](LICENSE)。
