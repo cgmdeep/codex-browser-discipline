@@ -72,6 +72,7 @@
 ```text
 SKILL.md
 README.md
+DESIGN.md
 VALIDATION.md
 references/
   cognitive-task-model.md
@@ -83,6 +84,10 @@ references/
 ```
 
 `SKILL.md` 是 Codex 的入口。只有当前任务需要时，才读取对应的参考文件。
+
+## 设计思路
+
+这个 Skill 不是从页面组件清单出发，而是从用户的认知任务、语义成功、情境连续性和承诺边界出发。完整的形成过程、核心取舍与后续演进方法见 [DESIGN.md](DESIGN.md)。它是面向人类维护者的说明，不会默认加入 Skill 的运行上下文。
 
 ## 适用与不适用
 
