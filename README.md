@@ -4,6 +4,35 @@
 
 `codex-browser-discipline` 是一套面向 Codex Browser 与 Computer Use 的网页操作和 UX 评审方法。它把注意力从“控件有没有被点击”提升到“用户的真实目标是否成立”：对象是否正确、范围是否清楚、跳转是否符合预期、结果能否核验，以及失败后能否安全恢复。
 
+## 安装
+
+可以直接让 Codex 安装这个 GitHub 仓库：
+
+```text
+请从 https://github.com/cgmdeep/codex-browser-discipline 安装这个 Skill。
+```
+
+也可以手动克隆到个人 Skills 目录：
+
+```bash
+git clone https://github.com/cgmdeep/codex-browser-discipline.git \
+  "${CODEX_HOME:-$HOME/.codex}/skills/codex-browser-discipline"
+```
+
+安装后重新打开 Codex 任务，让 Skill 被重新发现。
+
+## 使用
+
+当 Codex 操作网站、评审交互设计或验证已经渲染的网页时，这个 Skill 可以自动触发。也可以显式调用：
+
+```text
+$codex-browser-discipline 检查这个仪表盘是否便于理解和操作。
+$codex-browser-discipline 完成这个多步骤表单，但停在最终提交之前。
+$codex-browser-discipline 验证筛选、下钻和浏览器返回是否保留用户上下文。
+```
+
+它不会因为被调用就获得额外的操作权限。发送、发布、支付、授权、删除等外部副作用仍以用户请求和当前授权为边界。
+
 ## 它解决什么问题
 
 常见网页自动化容易把下面这条链路误认为任务完成：
@@ -74,6 +103,7 @@ SKILL.md
 README.md
 DESIGN.md
 VALIDATION.md
+CHANGELOG.md
 references/
   cognitive-task-model.md
   ux-interaction-review.md
@@ -97,6 +127,6 @@ references/
 
 ## 验证状态
 
-当前版本按 v0.2 冻结，已跨搜索、表单、仪表盘、表格、画布、AI 工作台以及 GitHub 删除和权限流程验证。测试范围、实际发现与未覆盖边界见 [VALIDATION.md](VALIDATION.md)。
+当前版本按 v0.2.0 冻结，已跨搜索、表单、仪表盘、表格、画布、AI 工作台以及 GitHub 删除和权限流程验证。测试范围、实际发现与未覆盖边界见 [VALIDATION.md](VALIDATION.md)，版本记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 它证明了该方法已经能够稳定改善 Codex 的观察、操作、核验和停止决策，但不声称替代真实用户研究、业务规则或所有辅助技术测试。
